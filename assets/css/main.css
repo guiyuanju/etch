@@ -279,3 +279,9 @@ footer#footer {
     color: #b3b3b3;
     margin: 40px 0;
 }
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.5em;
+}
