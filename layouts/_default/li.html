@@ -2,5 +2,8 @@
     <a href="{{ .Permalink }}">
         {{ .Title }}
         <small><time>{{ .Date | time.Format (i18n "posts.date") }}</time></small>
+        {{ range (.GetTerms "tags") }}
+            <small><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></small>
+        {{ end }}
     </a>
 </li>
